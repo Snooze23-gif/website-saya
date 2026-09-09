@@ -7,11 +7,11 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #000000;
+  background-color: #121212;
   color: #f1f1f1;
 }
 
@@ -131,7 +131,7 @@ body {
 /* Style Umum untuk Setiap Section Konten */
 .section-box {
   padding: 100px 80px;
-  min-height: 60vh;
+  min-height: 100vh;
 }
 
 .section-box h2 {
@@ -149,15 +149,13 @@ body {
 
 /* Variasi Warna Latar Belakang Selang-seling */
 .bg-light {
-  background-color: #434343;
+  background-color: #2C2C2C;
 }
 /* Keadaan awal: teks transparan (hilang) dan agak turun ke bawah */
 .muncul-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out; /* Mengatur durasi smooth */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Mengatur durasi smooth */
 }
 
 /* Keadaan setelah di-scroll: teks muncul penuh dan naik ke posisi asli */
@@ -166,25 +164,42 @@ body {
   transform: translateY(0);
 }
 .sejajar {
-  display: flex;
-  gap: 15px;
-}
+    display: flex;       
+    gap: 15px;      
+  }
+  .gambar-bulat {
+    padding: 15px;
+    width: 200px;
+    height: 200px;        
+    border-radius: 30%; 
+    object-fit: cover;
+  }   
 
-.gambar-bulat {
-  width: 200px;
-  height: 200px;
-  border-radius: 30%;
-  object-fit: cover;
-}
-.gambar-bulatxc {
-  max-width: 100%; 
-  width: 250px; 
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-}
-.teks-gambar {
-  margin-top: 8px;    
-  font-size: 14px;     
-  color: #333333;  
-}
+  .gambar-bulatp {
+    padding: 15px;
+    width: 200px;
+    height: 200px;        
+    border-radius: 20%; 
+    object-fit: cover;
+  }  
+
+  .gambar-bulatv {
+    padding: 15px; 
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  /* Tambahkan/ubah bagian ini */
+  display: block;
+  margin: 0 auto; 
+  }  
+
+  .gambar-bulatx {
+  padding: 15px; 
+  width: 300px; 
+  height: 450px; 
+  border-radius: 20%;  
+  display: block;
+  margin: 0 auto; 
+  }  
+
